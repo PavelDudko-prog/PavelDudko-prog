@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Моё портфолио — Веб-разработчик</title>
+  <meta name="description" content="Личный сайт-портфолио веб-разработчика: проекты, навыки, контакты." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#hero" aria-label="На главную">Моё&nbsp;портфолио</a>
+      <nav class="nav" aria-label="Главная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#resume">Резюме</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Привет! Я <span class="grad">Веб‑разработчик</span></h1>
+          <p class="lead">Создаю современные, быстрые и удобные сайты и интерфейсы.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">Смотреть проекты</a>
+            <a class="btn btn-soft" href="#resume">Скачать резюме</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="./assets/pavel.JPG" alt="Фото разработчика (заглушка)" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="card card-soft">
+          <div class="about-grid">
+            <div class="about-photo">
+              <img src="./assets/pavel 2.jpg" alt="Фото разработчика (заглушка)" />
+            </div>
+            <div class="about-text">
+              <h2>Обо мне</h2>
+              <p>
+                Я занимаюсь веб‑разработкой и люблю аккуратные интерфейсы. Фокус на
+                <strong>HTML</strong>, <strong>CSS</strong> и <strong>JavaScript</strong>. 
+                Пишу чистый, понятный код и уделяю внимание адаптивности и доступности.
+              </p>
+              <div class="skills">
+                <span class="chip">HTML5</span>
+                <span class="chip">CSS3 (Flex/Grid)</span>
+                <span class="chip">JavaScript (ES6+)</span>
+                <span class="chip">Git</span>
+                <span class="chip">БЭМ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Проекты</h2>
+        </div>
+        <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <div class="card resume-card">
+          <h2>Резюме</h2>
+          <p class="muted">PDF лежит в <code>assets/resume.pdf</code>. Замените файл своим.</p>
+          <a class="btn btn-primary" href="./assets/resume.pdf" download>Скачать резюме (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="card card-soft">
+          <h2>Контакты</h2>
+          <p>Открыт к предложениям и сотрудничеству.</p>
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                <path d="M20 4H4a2 2 0 00-2 2v.01l10 6.25L22 6.01V6a2 2 0 00-2-2zm0 4.2l-8 5-8-5V18a2 2 0 002 2h12a2 2 0 002-2V8.2z"/>
+              </svg>
+              <a href="mailto:hello@example.com">hello@example.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                <path d="M12 .5A11.5 11.5 0 004.1 21.6c.6.1.8-.3.8-.6v-2.3c-3.3.7-4-1.6-4-1.6-.6-1.4-1.5-1.8-1.5-1.8-1.2-.9 0-.9 0-.9 1.3.1 2 .  9 2 .9  .  7 1.2 1.8 .8 2.2.6.1-.5.3-.8.6-1-2.7-.3-5.6-1.3-5.6-6A4.7 4.7 0 012 .9 4.4 4.4 0 012.1 1s1-.3 3.2 1.2A11.2 11.2 0 0112 1.9c1 0 2.1.1 3 .3C17.2.7 18.2 1 18.2 1a4.4 4.4 0 01.1 3.2 4.7 4.7 0 011.3 3.3c0 4.7-2.9 5.7-5.6 6 .3.2.7.8.7 1.6v2.4c0 .3.2.7.8.6A11.5 11.5 0 0012 .5"/>
+              </svg>
+              <a href="https://github.com/username" target="_blank" rel="noopener">GitHub</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                <path d="M12 2C6.5 2 2 6.3 2 11.6c0 3 1.6 5.7 4 7.5v2.9l3.6-2c.8.2 1.7.3 2.5.3 5.5 0 10-4.3 10-9.6S17.5 2 12 2z"/>
+              </svg>
+              <a href="https://t.me/username" target="_blank" rel="noopener">Telegram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Мой личный бренд. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
