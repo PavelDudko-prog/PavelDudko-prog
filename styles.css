@@ -57,7 +57,7 @@ body{
 .hero-text h1{font-size:clamp(28px,4.5vw,44px);line-height:1.15;margin:0 0 12px}
 .grad{background:linear-gradient(120deg, var(--primary), #8aacc9);-webkit-background-clip:text;background-clip:text;color:transparent}
 .cta{display:flex;gap:12px;margin-top:12px}
-.hero-visual img{width:100%;max-width:380px;display:block;margin:0 auto;filter:drop-shadow(0 12px 30px rgba(0,0,0,0.08))}
+.hero-visual img{width:100%;max-width:380px;display:block;margin:0 auto;border-radius:20px;filter:drop-shadow(0 12px 30px rgba(0,0,0,0.08))}
 
 .about-grid{display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:start}
 .about-photo img{width:160px;height:160px;border-radius:20px;background:#f1f5f9}
